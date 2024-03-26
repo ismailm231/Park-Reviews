@@ -1,0 +1,117 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light azure background */
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+}
+
+/* Left Container (Park Description) */
+#park-description {
+    background-color: #e6f2ff; /* Very light blue */
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Take up available space */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+/* Image Styling */
+.image-container {
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+/* Reviews Container */
+#reviews-container {
+    flex: 1; /* Take up available space */
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #66b3ff; /* Lighter blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3399ff; /* Slightly darker blue */
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Styling */
+button {
+    background-color: #008080; /* Teal color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #006666; /* Darker teal */
+}
+
+/* Update and Delete Review Forms */
+#update-review-container,
+#delete-review-container {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#update-review-container h2,
+#delete-review-container h2 {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,115 @@
+/* Base styles with improved font */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* More modern font */
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light background for the entire page */
+}
+
+/* Main content area with promotional content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px; /* Increased whitespace */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Updated color gradient */
+    color: #ffffff; /* Light text for better contrast */
+}
+
+.main-content h1 {
+    font-size: 3rem; /* Larger font size for the title */
+    margin-bottom: 0.5em; /* Added spacing */
+}
+
+.main-content p {
+    font-size: 1.2rem; /* Larger font size for the subtitle */
+    margin-bottom: 2em; /* Added spacing */
+}
+
+/* Search area centered with enhancements */
+.search-area {
+    margin-top: 20px;
+    display: flex; /* Use flex to align input and button */
+    justify-content: center; /* Center the search elements */
+}
+
+.search-input {
+    border: 2px solid #ffffff; /* More defined border */
+    padding: 15px 20px; /* Increased padding */
+    width: 400px; /* Larger width */
+    border-radius: 30px; /* More pronounced rounded corners */
+    font-size: 1.1rem; /* Larger font size */
+    color: #333; /* Dark text for readability */
+    transition: border 0.3s; /* Smooth transition for interaction */
+}
+
+.search-input:focus {
+    border-color: #f4f4f4; /* Change border color on focus */
+}
+
+.search-button {
+    background-color: #ffffff; /* Light button for contrast */
+    color: #667eea; /* Use gradient start color for text */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-left: -5px; /* Adjust as needed to make it seamless with the input */
+    font-size: 1.1rem; /* Larger font size */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for interaction */
+}
+
+.search-button:hover {
+    background-color: #667eea; /* Gradient start color */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Grid layout for parks with improvements */
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* Increased gap for better separation */
+    padding: 40px; /* Increased padding */
+    max-width: 1200px;
+    margin: 40px auto; /* Increased vertical margin */
+    box-sizing: border-box;
+}
+
+.park-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff; /* White background for each item */
+    border-radius: 16px; /* Rounded corners for the cards */
+    overflow: hidden; /* Ensures the image respects the border radius */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* More pronounced shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none;
+}
+
+.park-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.park-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures images are block level for proper spacing */
+}
+
+.park-item h3 {
+    font-size: 1.4rem; /* Larger font size for titles */
+    color: #333; /* Dark text for readability */
+    padding: 15px 10px 0; /* Padding for spacing */
+}
+
+.park-item p {
+    font-size: 1rem; /* Standard font size for content */
+    color: #666; /* Subdued text color */
+    padding: 0 10px 15px; /* Padding for spacing */
+}
+

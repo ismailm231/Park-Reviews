@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Reviews</title>
+    <link rel="stylesheet" href="../styles/parkReviewstyle.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section id="park-description">
+            <h2>Kensington</h2>
+            <p>
+                Kensington State Park, Michigan: A perfect blend of scenic trails, Kent Lake views, and vibrant outdoor energy awaits in this picturesque natural escape.
+            </p>
+            <p>
+                Park Hours: Weekdays: 6:00 AM - 10:00 PM, Weekends: 6:00 AM - 10:00 PM
+            </p>
+        </section>
+
+        <div class="image-container">
+            <img src="../images/kens.png" alt="Grand Haven">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="reviews-container"></div>
+
+        <form id="review-form">
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" autocomplete="username" required><br>
+
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" autocomplete="off" required></textarea><br>
+
+            <label for="timeOfVisit">Time of Visit:</label>
+            <input type="text" id="timeOfVisit" name="timeOfVisit" autocomplete="off" required><br>
+
+            <label for="keyWords">Keywords:</label>
+            <input type="text" id="keyWords" name="keyWords" autocomplete="off" required><br>
+
+            <div class="button-container">
+                <button type="submit">Submit Review</button>
+                <button id="update-review-button">Update Review</button>
+                <button id="delete-review-button">Delete Review</button>
+            </div>
+        </form>
+
+        <div id="update-review-container" style="display: none;">
+            <h2>Update Review</h2>
+            <label for="updateUserName">Enter Your User Name to Update Your Review:</label>
+            <input type="text" id="updateUserNameInput" autocomplete="off" required>
+            <button type="button" id="updateUserNameButton">Submit</button>
+
+            <div id="updated-review-form" style="display: none;">
+                <label for="updateRating">Rating:</label>
+                <input type="number" id="updateRating" name="updateRating" min="1" max="5" required><br>
+
+                <label for="updateDescription">Description:</label>
+                <textarea id="updateDescription" name="updateDescription" autocomplete="off" required></textarea><br>
+
+                <label for="updateTimeOfVisit">Time of Visit:</label>
+                <input type="text" id="updateTimeOfVisit" name="updateTimeOfVisit" autocomplete="off" required><br>
+
+                <label for="updateKeyWords">Keywords:</label>
+                <input type="text" id="updateKeyWords" name="updateKeyWords" autocomplete="off" required><br>
+
+                <button type="submit" id="submit-updated-review-button">Submit Updated Review</button>
+            </div>
+        </div>
+
+        <div id="delete-review-container" style="display: none;">
+            <h2>Delete Review</h2>
+            <label for="deleteUserName">User Name:</label>
+            <input type="text" id="deleteUserName" name="deleteUserName" autocomplete="off" required><br>
+            <button type="submit">Delete Review</button>
+        </div>
+    </div>
+
+    <script src="../kenScript.js"></script>
+
+</body>
+
+</html>
+
